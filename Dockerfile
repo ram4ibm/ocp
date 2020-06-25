@@ -20,3 +20,4 @@ RUN apt-get autoremove --assume-yes \
 ENV SFDX_CONTAINER_MODE true
 ENV DEBIAN_FRONTEND=dialog
 ENV SHELL /bin/bash
+ENTRYPOINT ["tail", "-f", "/dev/null"]
